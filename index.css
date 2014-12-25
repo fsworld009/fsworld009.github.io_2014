@@ -1,3 +1,6 @@
+section {
+  min-height: 100vh; }
+
 .my-body {
   margin-left: auto;
   margin-right: auto;
