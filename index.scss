@@ -1,15 +1,22 @@
 $bg-color : #87CEFA;
 
-.my-body {
-  // background-color: $bg-color;
+@mixin center () {
+  margin-left: auto;
+  margin-right: auto; 
 }
+
+.my-body {
+  @include center;
+  width: 90%;
+}
+
+$jumbotron-margin-size : 25px;
 
 .jumbotron {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: $jumbotron-margin-size;
+  margin-bottom: $jumbotron-margin-size;
+  @include center;
 }
 
 .my-protrait {
