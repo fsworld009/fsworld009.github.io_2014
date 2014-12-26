@@ -10,11 +10,23 @@ section {
   width: 80%;
   margin-top: 25px;
   margin-bottom: 25px;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto; }
 
 .my-protrait {
   float: left;
   margin: 5px; }
+
+.align-right {
+  position: absolute;
+  right: 25px; }
+
+.absolute-pos-container {
+  position: relative; }
+
+.dummy {
+  content: none;
+  height: 38px; }
 
 /*# sourceMappingURL=index.css.map */

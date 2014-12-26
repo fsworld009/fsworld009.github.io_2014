@@ -4,9 +4,19 @@ section {
   min-height: 100vh;
 }
 
+@mixin right ($right) {
+  position: absolute;
+  right: $right;
+}
+
 @mixin center () {
   margin-left: auto;
   margin-right: auto; 
+}
+
+@mixin dummy ($height){
+  content: none;
+  height: $height;
 }
 
 .my-body {
@@ -15,15 +25,29 @@ section {
 }
 
 $jumbotron-margin-size : 25px;
+$jumbotron-padding-size : 10px;
 
 .jumbotron {
   width: 80%;
   margin-top: $jumbotron-margin-size;
   margin-bottom: $jumbotron-margin-size;
+  padding: $jumbotron-padding-size;
   @include center;
 }
 
 .my-protrait {
   float: left;
   margin: 5px;
+}
+
+.align-right{
+  @include right(25px);
+}
+
+.absolute-pos-container {
+  position: relative;
+}
+
+.dummy {
+  @include dummy(38px);
 }
