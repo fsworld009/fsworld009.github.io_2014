@@ -30,7 +30,7 @@ section {
 
 .my-body {
   @include center;
-  width: 90%;
+  width: 95%;
   background-image: url("bg.jpg");
   background-attachment: fixed;
 }
@@ -39,11 +39,9 @@ $jumbotron-margin-size : 25px;
 $jumbotron-padding-size : 10px;
 
 .jumbotron {
-  width: 80%;
   margin-top: $jumbotron-margin-size;
   margin-bottom: $jumbotron-margin-size;
   padding: $jumbotron-padding-size;
-  @include center;
 }
 
 .my-protrait {
