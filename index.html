@@ -12,8 +12,15 @@
   <body class="my-body">
     (Under Construction)
     <nav class="navbar navbar-default">
+      <!-- button apperas when screen width is too small (replace regular navbar) -->
+      <button data-target="#navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
       <div class="container-fluid">
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Top</a></li>
             <li><a href="#">Profile</a></li>
