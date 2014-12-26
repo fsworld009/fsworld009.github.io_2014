@@ -42,4 +42,17 @@ section {
   vertical-align: middle;
   font-size: 1.5em; }
 
+.skills {
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.fa-envelope {
+  color: #F08080; }
+
+.fa-linkedin-square {
+  color: #1985BC; }
+
+.fa-google-plus-square {
+  color: #DD4B39; }
+
 /*# sourceMappingURL=index.css.map */
