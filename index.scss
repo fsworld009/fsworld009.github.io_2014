@@ -9,6 +9,15 @@ section {
   right: $right;
 }
 
+/*Vertically central align element, but overlap each other in small screen, so I decide not to use it*/
+@mixin vertical-align(){
+  position:absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 @mixin center () {
   margin-left: auto;
   margin-right: auto; 
@@ -22,6 +31,8 @@ section {
 .my-body {
   @include center;
   width: 90%;
+  background-image: url("bg.jpg");
+  background-attachment: fixed;
 }
 
 $jumbotron-margin-size : 25px;
@@ -50,4 +61,14 @@ $jumbotron-padding-size : 10px;
 
 .dummy {
   @include dummy(38px);
+}
+
+.top .profile, .projects, .contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bg-wrapper {
+  background-color: rgba(255,255,255,0.7);
+  padding: 5px;
 }
