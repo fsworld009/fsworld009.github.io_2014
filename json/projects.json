@@ -6,7 +6,8 @@
             "date" : "Dec 2014 - Current",
             "summary" : "My protfolio, this webpage, is made by Twitter Bootstrap and jQuery",
             "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "git", "emacs"],
-            "read_more" : true
+            "read_more" : true,
+            "detail" : "my_portfolio"
         },
 
         {

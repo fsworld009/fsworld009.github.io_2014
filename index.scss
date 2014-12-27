@@ -18,9 +18,10 @@ section {
   transform: translateY(-50%);
 }
 
-@mixin center () {
+@mixin center ($width) {
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
+  width: $width;
 }
 
 @mixin dummy ($height){
@@ -29,8 +30,7 @@ section {
 }
 
 .my-body {
-  @include center;
-  width: 95%;
+  @include center(95%);
   background-image: url("bg.jpg");
   background-attachment: fixed;
 }
@@ -77,6 +77,11 @@ $jumbotron-padding-size : 10px;
   font-size: 1.5em;
 }
 
+.read-more:hover {
+  cursor: pointer;
+  color: #FF4500;
+}
+
 .skills, .links {
   font-weight: bold;
   font-size: 1.2em;
@@ -105,6 +110,17 @@ $jumbotron-padding-size : 10px;
   pading-right: 5px;
 }
 
-#project-template, #project-detail-template {
+#project-template {
   display: none;
+}
+
+#project-detail {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh; 
+  width: 100vw;
+  min-height: 100vh;
 }

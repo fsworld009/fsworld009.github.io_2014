@@ -42,6 +42,10 @@ section {
   vertical-align: middle;
   font-size: 1.5em; }
 
+.read-more:hover {
+  cursor: pointer;
+  color: #FF4500; }
+
 .skills, .links {
   font-weight: bold;
   font-size: 1.2em; }
@@ -64,7 +68,17 @@ section {
   padding-left: 5px;
   pading-right: 5px; }
 
-#project-template, #project-detail-template {
+#project-template {
   display: none; }
+
+#project-detail {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  width: 100vw;
+  min-height: 100vh; }
 
 /*# sourceMappingURL=index.css.map */
