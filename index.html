@@ -150,71 +150,14 @@
       <a name="projects"></a>
       <div class="bg-wrapper">
         <h2>Projects</h2>
-        <div class="container-fluid">
-          <div class="col-xs-12 col-sm-6 col-md-4 small-padding">
-            <div id="pj-my-protfolio" class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">My Protfolio (Dec 2014 - Current)</h3>
-              </div>
-              <div class="panel-body">
-                <p>My protfolio, this webpage, is made with Twitter Bootstrap and jQuery</p>
-                <div class="skills">Skills:
-                  <span class="label label-warning">HTML5</span>
-                  <span class="label label-warning">CSS3</span>
-                  <span class="label label-success">Twitter Bootstrap</span>
-                  <span class="label label-primary">git</span>
-                  <span class="label label-primary">emacs</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 small-padding">
-            <div id="pj-block-attack" class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">Block Attack (July 2013)</h3>
-              </div>
-              <div class="panel-body">Content</div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 small-padding">
-            <div id="pj-jtchat" class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">JTChat (July 2013 - Aug 2013)</h3>
-              </div>
-              <div class="panel-body">
-                <p>An IRC client written in Java Swing, customized for popular website Twitch.tv</p>
-                <div class="skills">Skills:
-                  <span class="label label-warning">Java</span>
-                  <span class="label label-success">Java Swing</span>
-                  <span class="label label-primary">git</span>
-                </div>
-                <div class="read-more">READ MORE <span class="fa fa-arrow-circle-right"></span></div>
-              </div>
-            </div>
-          </div>
+        <div id="project-place-holder" class="container-fluid">
 
-          <div class="col-xs-12 col-sm-6 col-md-4 small-padding">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">Project</h3>
-              </div>
-              <div class="panel-body">More comming soon....</div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
     
-    <article class="project-detail">
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title"></h3>
-        </div>
-        <div class="panel-body">
-          <p>aaa</p>
-        </div>
-      </div>
-    </article>
+
 
     <section class="contact">
       <a name="contact"></a>
@@ -232,8 +175,35 @@
         </div>
       </div>
     </section>
+    
+    <!-- templates, they are copied and used by jQuery  scripts-->
+    <div id="project-template" class="col-xs-12 col-sm-6 col-md-4 small-padding">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">TITLE</h3>
+        </div>
+        <div class="panel-body">
+          <p>Summary</p>
+          <div class="skills">Skills:
+          </div>
+          <div class="read-more">READ MORE <span class="fa fa-arrow-circle-right"></span></div>
+        </div>
+      </div>
+    </div>
+    
+    <article id="project-detail-template">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+        </div>
+        <div class="panel-body">
+          <p>aaa</p>
+        </div>
+      </div>
+    </article>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
   </body>
 </html>
