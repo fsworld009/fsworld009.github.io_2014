@@ -1,0 +1,14 @@
+{
+    "description" : "This website serves as my self-introduction to other people. It can be viewed on desktop, tablet or mobile device. I also abstract project listings and descriptions into JSON files so that I can update the site easily in the future.",
+    "points" :
+    [
+        "Use Twitter Bootstrap for responsive web design",
+        "Save project descriptions and links in JSON, then retrive them via jQuery AJAX methods",
+        "Apply SCSS mixins for cleaner CSS design"
+    ],
+    "screenshots" : [],
+    "links" :
+    [
+        {"name":"Source Code", "url":"https://github.com/fsworld009/fsworld009.github.io"}
+    ]
+}

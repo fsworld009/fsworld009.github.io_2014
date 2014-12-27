@@ -4,8 +4,8 @@
             "id" : "project-my-portfolio",
             "title" : "My Portfolio",
             "date" : "Dec 2014 - Current",
-            "summary" : "My protfolio, this webpage, is made with Twitter Bootstrap and jQuery",
-            "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "JSON", "git", "emacs"],
+            "summary" : "My protfolio, this webpage, is made by Twitter Bootstrap and jQuery",
+            "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "git", "emacs"],
             "read_more" : true
         },
 
