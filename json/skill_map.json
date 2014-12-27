@@ -1,0 +1,24 @@
+{
+    "labels" : ["default", "primary", "success", "info", "warning", "danger"],
+
+    "skills" : {
+        "HTML5" : 4,
+        "CSS3" : 4,
+        "javascript" : 4,
+        "jQuery" : 2,
+        "Twitter Bootstrap" : 2,
+        "AngularJS" : 2,
+        "JSON" : 1,
+        "XML" : 1,
+        "php" : 4,
+        "Java" : 4,
+        "Java Swing" : 2,
+        "C/C++" : 4,
+        "git" : 1,
+        "emacs" : 1,
+        "python" : 4,
+        "pygame" : 2,
+        "python-igraph" : 2
+    }
+}
+        
