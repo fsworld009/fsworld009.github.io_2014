@@ -1,7 +1,7 @@
 var photoswipe = function(){
     var pswpElement = document.querySelectorAll('.pswp')[0];
     var items = null;
-    var options = {};
+    var options = {history:false};
     var gallery = null;
 
     function push_item(src, width, height, caption){
@@ -74,17 +74,26 @@ var project_detail = function(){
             //screen shots
 
             var project_screenshots = project_panel.find(".screenshots");
-            for(i=0;i< project.screenshots.length;i++){
+            for(i in project.screenshots){
                 var screenshot = project.screenshots[i];
-                var src = "./screenshots/" + project_name + "-" + ("000"+(i+1)).slice(-3);
+                var src_prefix = "./screenshots/" + project_name + "-" + ("000" + (Number(i)+1) ).slice(-3);
+                var src_thumbnail =  src_prefix + '-thumbnail.' + screenshot.extension;
+                var src = src_prefix + '.' + screenshot.extension;
                 var width = screenshot.width;
                 var height = screenshot.height;
                 var caption = screenshot.caption;
 
-                project_screenshots.append('<img class="thumbnail" title="' + screenshot.caption + '" src="' + src + '-thumbnail.' + screenshot.extension +'">');
+                project_screenshots.append('<a href="' + src + '" class="screenshots-click" ><img class="thumbnail" style="display:inline" title="' + screenshot.caption + '" src="' + src_thumbnail +'"></a> ');
 
-                photoswipe.push_item(src + "." + screenshot.extension, width, height, caption);
+                photoswipe.push_item(src, width, height, caption);
             }
+
+            //register click event on thumbnails
+            $(".screenshots-click").on("click",function(ev){
+                ev.preventDefault();
+                console.log($(this).index());
+                photoswipe.show($(this).index()-1); //the first element is <br>
+            });
 
             var project_links = project_panel.find(".links");
             for (i in project.links){
@@ -99,4 +108,8 @@ var project_detail = function(){
 $(document).ready(function(){
 
     project_detail.loadProjectDetail();
+
+
+    
+    
 });
