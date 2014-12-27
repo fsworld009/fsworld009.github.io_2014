@@ -93,3 +93,14 @@ $jumbotron-padding-size : 10px;
 .fa-google-plus-square {
   color: #DD4B39;
 }
+
+/*more space for project panels*/
+.projects .container-fluid {
+  padding-left: 0 ;
+  padding-right: 0;
+}
+
+.projects .small-padding {
+  padding-left: 5px;
+  pading-right: 5px;
+}
