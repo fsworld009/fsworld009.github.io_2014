@@ -71,18 +71,18 @@ $jumbotron-padding-size : 10px;
   padding: 5px;
 }
 
-.read-more {
+.read-more, .back {
   text-align: right;
   vertical-align: middle;
   font-size: 1.5em;
 }
 
-.read-more:hover {
-  cursor: pointer;
+.read-more:hover>a, .back:hover>a {
   color: #FF4500;
+  text-decoration: none;
 }
 
-.skills, .links {
+.skills, .links, .screenshots {
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -115,12 +115,6 @@ $jumbotron-padding-size : 10px;
 }
 
 #project-detail {
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: 5vh; 
-  width: 100vw;
-  min-height: 100vh;
+  @include center(90%);
+  margin-top: 25px;
 }

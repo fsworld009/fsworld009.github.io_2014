@@ -1,7 +1,6 @@
 
     [
         {
-            "id" : "project-my-portfolio",
             "title" : "My Portfolio",
             "date" : "Dec 2014 - Current",
             "summary" : "My protfolio, this webpage, is made by Twitter Bootstrap and jQuery",
@@ -11,12 +10,12 @@
         },
 
         {
-            "id" : "project-jtchat",
             "title" : "JTChat",
             "date" : "Jul 2013 - Aug 2013",
             "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv",
             "skills" : ["Java", "Java Swing", "git"],
-            "read_more" : true
+            "read_more" : true,
+            "detail" : "jtchat"
         },
 
         {
