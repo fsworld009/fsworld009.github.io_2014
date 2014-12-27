@@ -1,3 +1,38 @@
+var photoswipe = function(){
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    var items = null;
+    var options = {};
+    var gallery = null;
+
+    function push_item(src, width, height, caption){
+        if(items === null){
+            items = [];
+        }
+        items.push({
+            src: src,
+            w: width,
+            h: height,
+            title: caption
+        });
+    }
+
+    function show(index){
+        if(items === null){
+            return;
+        }
+        options.index = index;
+        // if(gallery === null){
+            gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        // }
+        gallery.init();
+    }
+
+    return{
+        push_item: push_item,
+        show: show
+    };
+}();
+
 
 var project_detail = function(){
     var skill_map_json;
@@ -37,6 +72,19 @@ var project_detail = function(){
 
 
             //screen shots
+
+            var project_screenshots = project_panel.find(".screenshots");
+            for(i=0;i< project.screenshots.length;i++){
+                var screenshot = project.screenshots[i];
+                var src = "./screenshots/" + project_name + "-" + ("000"+(i+1)).slice(-3);
+                var width = screenshot.width;
+                var height = screenshot.height;
+                var caption = screenshot.caption;
+
+                project_screenshots.append('<img class="thumbnail" title="' + screenshot.caption + '" src="' + src + '-thumbnail.' + screenshot.extension +'">');
+
+                photoswipe.push_item(src + "." + screenshot.extension, width, height, caption);
+            }
 
             var project_links = project_panel.find(".links");
             for (i in project.links){

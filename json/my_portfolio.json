@@ -10,7 +10,15 @@
         "Save project descriptions and links in JSON, then retrive them via jQuery AJAX methods",
         "Apply SCSS mixins for cleaner CSS design"
     ],
-    "screenshots" : [],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "support mobile devices",
+            "width" : 1080,
+            "height" : 1920
+        }
+    ],
     "links" :
     [
         {"name":"Source Code", "url":"https://github.com/fsworld009/fsworld009.github.io"}
