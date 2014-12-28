@@ -1,0 +1,32 @@
+{
+    "title" : "Small widgets",
+    "date" : "Nov 2014 - Dec 2014",
+    "skills" : ["HTML5", "CSS3", "javascript", "jQuery"],
+    
+    "description" : "Some random webpages I wrote for practicing HTML5, CSS3 and javascript, including multiple versions of analog clock and star rating.",
+    "points" :
+    [
+        "drawed an analog clock with pure DOM elements and css",
+        "designed a calculator without using \"eval()\" method"
+    ],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "analog clock",
+            "width" : 460,
+            "height" : 513
+        },
+        {
+            "extension": "png",
+            "caption" : "calculator",
+            "width" : 316,
+            "height" : 404
+        }
+    ],
+    "links" :
+    [
+        {"name":"Project page", "url":"http://worldrock.xlphp.net/2014smallwidgets/"},
+        {"name":"Source Code", "url":"https://github.com/fsworld009/smallwidgets2014"}
+    ]
+}

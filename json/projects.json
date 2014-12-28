@@ -10,6 +10,15 @@
         },
 
         {
+            "title" : "Small widgets",
+            "date" : "Nov 2014 - Dec 2014",
+            "summary" : "Some small webpages I wrote when I'm learning HTML5/CSS3/javascript and jQuery",
+            "skills" : ["HTML5", "CSS3", "javascript", "jQuery"],
+            "read_more" : true,
+            "detail" : "small_widgets"
+        },
+        
+        {
             "title" : "JTChat",
             "date" : "Jul 2013 - Aug 2013",
             "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv",

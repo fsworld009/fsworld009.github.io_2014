@@ -97,7 +97,7 @@ var project_detail = function(){
 
             var project_links = project_panel.find(".links");
             for (i in project.links){
-                project_links.append('<a href="' + project.links[i].url + '" target="_blank">' + project.links[i].name + '</a>');
+                project_links.append('<a href="' + project.links[i].url + '" target="_blank">' + project.links[i].name + '</a> &bull; ');
             }
         });
     }
