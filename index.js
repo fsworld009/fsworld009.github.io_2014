@@ -9,9 +9,10 @@ var projects_panel = function(){
 
 
     
-    function loadProjects(){
+    function loadProjects(){      
         $.getJSON("./json/projects.json",function(json){
             $.each(json,function(index,project){
+                console.log(project);
                 var project_panel = $("#project-template").clone();
                 project_panel.removeAttr("id").appendTo("#project-place-holder");
                 project_panel.find(".panel-title").html(project.title + " (" + project.date + ")");

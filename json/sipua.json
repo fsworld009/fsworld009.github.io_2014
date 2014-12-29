@@ -1,0 +1,66 @@
+{
+    "title" : "(Team Project) SIP User Agent Remote Controller",
+    "date" : "Sep 2013 - Dec 2013",
+    "skills" : ["Java", "Java Swing", "Java Applet", "HTML4/CSS2"],
+
+    "description" : "A Java Applet that can remote control a SIP User Agent over the network to make a call or receive a call.",
+    "points" :
+    [
+        "Created a message-oriented protocol between a Java Applet and a Java program.",
+        "Modified Session Initiation Protocol (SIP) to meet project requirements.",
+        "Investigated an open source Java package (<a href=\"http://www.mjsip.org\" target=\"_blank\">MjSip</a>)"
+
+    ],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "architecture",
+            "width" : 667,
+            "height" : 401
+        },
+        {
+            "extension": "png",
+            "caption" : "http messages between Http server on Sip user agent and web browser",
+            "width" : 760,
+            "height" : 711
+        },
+        {
+            "extension": "png",
+            "caption" : "message protocol for calling from web browser",
+            "width" : 765,
+            "height" : 685
+        },
+        
+        {
+            "extension": "png",
+            "caption" : "message protocol for calling from another Sip user agent",
+            "width" : 760,
+            "height" : 687
+        },
+        {
+            "extension": "png",
+            "caption" : "message protocol for closing a call",
+            "width" : 760,
+            "height" : 373
+        },
+        {
+            "extension": "png",
+            "caption" : "A sip user agent written in Java Swing and MjSip",
+            "width" : 765,
+            "height" : 685
+        },
+        {
+            "extension": "png",
+            "caption" : "Java Applet for users to remote control their sip user agent",
+            "width" : 712,
+            "height" : 677
+        }
+    ],
+    "links" :
+    [
+        {"name":"Source Code (Sip user agent)", "url":"https://github.com/fsworld009/TSDproject-sipua"},
+        {"name":"Source Code (Webphone)", "url":"https://github.com/fsworld009/TSDproject-webphone"},
+        {"name":"Source Code (Final Submission)", "url":"https://github.com/fsworld009/TSDproject-submission"}
+    ]
+}

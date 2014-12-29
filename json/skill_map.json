@@ -20,7 +20,13 @@
         "emacs" : 1,
         "python" : 4,
         "pygame" : 2,
-        "python-igraph" : 2
+        "python-igraph" : 2,
+        "HTML4/CSS2" : 0,
+        "Java Applet" : 2,
+        "Linux" : 1,
+        "Unix" : 1,
+        "Socket programming" : 0,
+        "OOP" : 0
     }
 }
         

@@ -4,7 +4,7 @@
             "title" : "My Portfolio",
             "date" : "Dec 2014 - Current",
             "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "git", "emacs"],
-            "summary" : "My protfolio, this webpage, is made by Twitter Bootstrap and jQuery",
+            "summary" : "My protfolio, this webpage, is written in Twitter Bootstrap and jQuery.",
             "detail_id" : "my_portfolio"
         },
 
@@ -12,23 +12,37 @@
             "title" : "Small widgets",
             "date" : "Nov 2014 - Dec 2014",
             "skills" : ["HTML5", "CSS3", "javascript", "jQuery"],
-            "summary" : "Some small webpages I wrote when I'm learning HTML5/CSS3/javascript and jQuery",
+            "summary" : "Some small webpages I wrote when I'm learning HTML5/CSS3/javascript and jQuery.",
             "detail_id" : "small_widgets"
         },
         
         {
-            "title" : "Linear Programming Network Design",
+            "title" : "A Fast Solution for Network Design",
             "date" : "Feb 2014",
             "skills" : ["Java", "python", "python-igraph"],
-            "summary" : "Implemented an algorithm covered in class, and generated graphs by using python-igraph",
+            "summary" : "Implemented an algorithm covered in class, and generated graphs by using python-igraph.",
             "detail_id" : "lpfastsolution"
         },
         
         {
+            "title" : "(Team) SIP User Agent Remote Controller",
+            "date" : "Sep 2013 - Dec 2013",
+            "skills" : ["Java", "Java Swing", "Java Applet", "HTML4/CSS2"],
+            "summary" : "A Java Applet that can remote control a SIP User Agent over the network to make a call or receive a call.",
+            "detail_id" : "sipua"
+        },
+        {
+            "title" : "(Team) Distributed Mutual Exclusion Algorithm",
+            "date" : "Sep 2013 - Dec 2013",
+            "skills" : ["C/C++", "Unix", "Linux", "Socket programming"],
+            "summary" : "A quorum-based and token-based mutual exclusion algorithm in a distributed system.",
+            "detail_id" : "aaaa"
+        },
+        {
             "title" : "JTChat",
             "date" : "Jul 2013 - Aug 2013",
             "skills" : ["Java", "Java Swing", "git"],
-            "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv",
+            "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv.",
             "detail_id" : "jtchat"
         },
 
@@ -37,8 +51,7 @@
             "title" : "Project",
             "date" : "",
             "summary" : "More projects coming soon....",
-            "skills" : [],
-            "external_site" : false
+            "skills" : []
         }
     ]
 
