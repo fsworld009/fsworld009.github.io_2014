@@ -58,12 +58,6 @@
             "skills" : ["SQL", "Unix"],
             "summary" : "A relational database for Insurance companies and agencies.",
             "detail_id" : "dbproject"
-        },
-        {
-            "title" : " ",
-            "date" : "2006 - 2012",
-            "summary" : "More projects coming soon....",
-            "skills" : []
         }
     ]
 
