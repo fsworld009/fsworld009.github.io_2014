@@ -3,7 +3,7 @@
         {
             "title" : "My Portfolio",
             "date" : "Dec 2014 - Current",
-            "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "git", "emacs"],
+            "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "emacs"],
             "summary" : "My protfolio, this webpage, is written in Twitter Bootstrap and jQuery.",
             "detail_id" : "my_portfolio"
         },
@@ -27,7 +27,7 @@
         {
             "title" : "(Team) SIP User Agent Remote Controller",
             "date" : "Sep 2013 - Dec 2013",
-            "skills" : ["Java", "Java Swing", "Java Applet", "HTML4/CSS2"],
+            "skills" : ["Java", "Java Swing", "Java Applet", "HTML4/CSS2", "OOP"],
             "summary" : "A Java Applet that can remote control a SIP User Agent over the network to make a call or receive a call.",
             "detail_id" : "sipua"
         },
@@ -41,11 +41,17 @@
         {
             "title" : "JTChat",
             "date" : "Jul 2013 - Aug 2013",
-            "skills" : ["Java", "Java Swing", "git"],
+            "skills" : ["Java", "Java Swing", "Socket programming", "OOP"],
             "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv.",
             "detail_id" : "jtchat"
         },
-
+        {
+            "title" : "Block Attack",
+            "date" : "Jun 2013",
+            "skills" : ["python", "pygame", "OOP"],
+            "summary" : "A mini game written in python and pygame",
+            "detail_id" : "blockattack"
+        },
         {
             "id" : "project-coming-soon",
             "title" : "Project",

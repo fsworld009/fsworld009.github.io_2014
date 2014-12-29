@@ -1,0 +1,32 @@
+{
+    "title" : "Block Attack",
+    "date" : "Jun 2013",
+    "skills" : ["python", "pygame", "OOP"],
+    
+    "description" : "A mini game written in python and pygame",
+    "points" :
+    [
+        "(Use arrow keys to control)",
+        "(Game objective: do not get crushed by those blocks!)"
+    ],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "in game snapshot",
+            "width" : 656,
+            "height" : 518
+        },
+        {
+            "extension": "png",
+            "caption" : "game over",
+            "width" : 656,
+            "height" : 518
+        }
+    ],
+    "links" :
+    [
+        {"name":"Latest binary for Windows", "url":"https://mega.co.nz/#F!ecc0WC7R!G-tLKVXBPiIYk4HdMIKPdQ"},
+        {"name":"Source Code", "url":"https://github.com/fsworld009/BlockAttack"}
+    ]
+}
