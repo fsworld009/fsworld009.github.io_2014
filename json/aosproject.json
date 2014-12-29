@@ -1,0 +1,28 @@
+{
+    "title" : "Distributed Mutual Exclusion Algorithm",
+    "date" : "Sep 2013 - Dec 2013",
+    "skills" : ["Java", "python", "python-igraph"],
+
+    "description" : "A quorum-based and token-based mutual exclusion algorithm in a distributed system.",
+    "points" :
+    [
+        "Applied TCP Socket programming in C on Linux",
+        "Practiced Linux commands and tools",
+        "Used JIRA for project management"
+
+    ],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "our algorithm's performance compare to Maekawa's algorithm",
+            "width" : 904,
+            "height" : 627
+        }
+    ],
+    "links" :
+    [
+        {"name":"Source Code", "url":"https://github.com/fsworld009/AOSproject"},
+        {"name":"Source Code (Final submission)", "url":"https://github.com/fsworld009/AOSproject-submission"}
+    ]
+}

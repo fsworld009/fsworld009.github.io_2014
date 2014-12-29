@@ -36,7 +36,7 @@
             "date" : "Sep 2013 - Dec 2013",
             "skills" : ["C/C++", "Unix", "Linux", "Socket programming"],
             "summary" : "A quorum-based and token-based mutual exclusion algorithm in a distributed system.",
-            "detail_id" : "aaaa"
+            "detail_id" : "aosproject"
         },
         {
             "title" : "JTChat",
