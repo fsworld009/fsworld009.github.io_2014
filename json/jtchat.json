@@ -1,0 +1,40 @@
+{
+    "title" : "My Portfolio",
+    "date" : "Dec 2014 - Current",   
+    "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "emacs"],
+    
+    "description" : "An Internet Relay Chat (IRC) program designed for users of a popular video streaming website, Twitch.",
+    "points" :
+    [
+        "Implemented a simple IRC bot by Java TCP socket packages.",
+        "Learned to write a GUI program with JAVA Swing.",
+        "Analyzed and handled customized IRC control messages made by Twitch."
+
+    ],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "configuration dialog",
+            "width" : 300,
+            "height" : 510
+        },
+        {
+            "extension": "png",
+            "caption" : "simulate \"delete banned messages\" functionality on Twitch.tv",
+            "width" : 283,
+            "height" : 453
+        },
+        {
+            "extension": "png",
+            "caption" : "has ability to parse Twitch-customized messages and display nickname colors",
+            "width" : 283,
+            "height" : 453
+        }
+    ],
+    "links" :
+    [
+        {"name":"Latest binary", "url":"https://mega.co.nz/#F!udtRiARY!EyG9WCrm8FtbJwLBKbS94A"},
+        {"name":"Source Code", "url":"https://github.com/fsworld009/JTChat"}
+    ]
+}
