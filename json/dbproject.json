@@ -1,0 +1,37 @@
+{
+    "title" : "(Team) Insurance Management Database System",
+    "date" : "Jan 2013 - May 2013",
+    "skills" : ["SQL", "Unix"],
+    "description" : "A relational database for Insurance companies and agencies.",   
+    "points" :
+    [
+        "Designed an enhanced entity-relationship (EER) model from requirement documents.",
+        "Converted the EER model to a relational model.",
+        "Performed SQL queries with Oracle SQLPlus on a Unix machine."
+    ],
+    "screenshots" :
+    [
+        {
+            "extension": "png",
+            "caption" : "EER model design",
+            "width" : 769,
+            "height" : 1000
+        },
+        {
+            "extension": "png",
+            "caption" : "relational model design",
+            "width" : 761,
+            "height" : 929
+        },
+        {
+            "extension": "png",
+            "caption" : "dependancy diagram",
+            "width" : 748,
+            "height" : 876
+        }
+    ],
+    "links" :
+    [
+    
+    ]
+}

@@ -49,8 +49,15 @@
             "title" : "Block Attack",
             "date" : "Jun 2013",
             "skills" : ["python", "pygame", "OOP"],
-            "summary" : "A mini game written in python and pygame",
+            "summary" : "A mini game written in python and pygame.",
             "detail_id" : "blockattack"
+        },
+        {
+            "title" : "(Team) Insurance Management Database System",
+            "date" : "Jan 2013 - May 2013",
+            "skills" : ["SQL", "Unix"],
+            "summary" : "A relational database for Insurance companies and agencies.",
+            "detail_id" : "dbproject"
         },
         {
             "title" : " ",
