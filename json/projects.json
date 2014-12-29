@@ -3,28 +3,33 @@
         {
             "title" : "My Portfolio",
             "date" : "Dec 2014 - Current",
-            "summary" : "My protfolio, this webpage, is made by Twitter Bootstrap and jQuery",
             "skills" : ["HTML5", "CSS3", "Twitter Bootstrap", "jQuery", "AJAX", "JSON", "git", "emacs"],
-            "read_more" : true,
-            "detail" : "my_portfolio"
+            "summary" : "My protfolio, this webpage, is made by Twitter Bootstrap and jQuery",
+            "detail_id" : "my_portfolio"
         },
 
         {
             "title" : "Small widgets",
             "date" : "Nov 2014 - Dec 2014",
-            "summary" : "Some small webpages I wrote when I'm learning HTML5/CSS3/javascript and jQuery",
             "skills" : ["HTML5", "CSS3", "javascript", "jQuery"],
-            "read_more" : true,
-            "detail" : "small_widgets"
+            "summary" : "Some small webpages I wrote when I'm learning HTML5/CSS3/javascript and jQuery",
+            "detail_id" : "small_widgets"
+        },
+        
+        {
+            "title" : "Linear Programming Network Design",
+            "date" : "Feb 2014",
+            "skills" : ["Java", "python", "python-igraph"],
+            "summary" : "Implemented an algorithm covered in class, and generated graphs by using python-igraph",
+            "detail_id" : "lpfastsolution"
         },
         
         {
             "title" : "JTChat",
             "date" : "Jul 2013 - Aug 2013",
-            "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv",
             "skills" : ["Java", "Java Swing", "git"],
-            "read_more" : true,
-            "detail" : "jtchat"
+            "summary" : "An IRC client written in Java Swing, customized for popular website Twitch.tv",
+            "detail_id" : "jtchat"
         },
 
         {
@@ -33,7 +38,7 @@
             "date" : "",
             "summary" : "More projects coming soon....",
             "skills" : [],
-            "read_more" : false
+            "external_site" : false
         }
     ]
 

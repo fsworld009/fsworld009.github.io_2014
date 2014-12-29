@@ -22,10 +22,14 @@ var projects_panel = function(){
                     project_skills.append("<span class=\"label label-" + skill_map_json.labels[ skill_map_json.skills [project.skills[i] ]  ] + "\">" + project.skills[i] + "</span> ");
                 }
 
-                if(!project.read_more){
-                    project_panel.find(".read-more").remove();
+                if(typeof project.detail_id !== "undefined"){
+                    project_panel.find(".read-more").find("a").attr("href","project_detail.html#"+project.detail_id);
+                }else if(typeof project.project_id !== "undefined"){
+                    project_panel.find(".read-more").find("a").attr("href","./"+project.project_id+"/").attr("target","_blank");
+                }else if(typeof project.external_link !== "undefined"){
+                    project_panel.find(".read-more").find("a").attr("href",project.external_link).attr("target","_blank");
                 }else{
-                    project_panel.find(".read-more").find("a").attr("href","project_detail.html#"+project.detail);
+                    project_panel.find(".read-more").remove();
                 }
             });
         });
