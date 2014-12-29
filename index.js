@@ -11,10 +11,13 @@ var projects_panel = function(){
     
     function loadProjects(){      
         $.getJSON("./json/projects.json",function(json){
+            var col = 0;
             $.each(json,function(index,project){
-                console.log(project);
+                if(col === 0 ){
+                    $("#project-place-holder").append('<div class="row"></div>');
+                }
                 var project_panel = $("#project-template").clone();
-                project_panel.removeAttr("id").appendTo("#project-place-holder");
+                project_panel.removeAttr("id").appendTo("#project-place-holder > div:last");
                 project_panel.find(".panel-title").html(project.title + " (" + project.date + ")");
                 project_panel.find(".panel-body").children().first().html(project.summary);
 
@@ -32,6 +35,7 @@ var projects_panel = function(){
                 }else{
                     project_panel.find(".read-more").remove();
                 }
+                col = (col+1)%3;
             });
         });
     }
