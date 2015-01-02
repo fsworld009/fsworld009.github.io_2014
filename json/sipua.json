@@ -3,7 +3,7 @@
     "date" : "Sep 2013 - Dec 2013",
     "skills" : ["Java", "Java Swing", "Java Applet", "HTML4/CSS2"],
 
-    "description" : "A Java Applet that can remote control a SIP User Agent over the network to make a call or receive a call.",
+    "description" : "A Java Applet that can remotely control a SIP User Agent over the network to make a call or receive a call.",
     "points" :
     [
         "Created a message-oriented protocol between a Java Applet and a Java program.",

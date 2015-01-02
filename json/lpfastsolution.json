@@ -3,7 +3,7 @@
     "date" : "Feb 2014",
     "skills" : ["Java", "python", "python-igraph"],
 
-    "description" : "This project was to implement a linear programming algorithm in order to find a network design that has the minimal cost.",
+    "description" : "A linear programming algorithm in order to find a network design that has the minimal cost in a given network graph.",
     "points" :
     [
         "Implemented Dijkstra's algorithm in Java to find shortest path between two nodes in a graph",

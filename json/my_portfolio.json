@@ -7,8 +7,7 @@
     "points" :
     [
         "Use Twitter Bootstrap for responsive web design",
-        "Save project descriptions and links in JSON, then retrive them via jQuery AJAX methods",
-        "Apply SCSS mixins for cleaner CSS design"
+        "Save project descriptions and links in JSON, and retrive them via jQuery AJAX methods when user clicks the project detail link"
     ],
     "screenshots" :
     [

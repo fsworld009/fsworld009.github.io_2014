@@ -12,7 +12,7 @@
             "title" : "Small widgets",
             "date" : "Nov 2014 - Dec 2014",
             "skills" : ["HTML5", "CSS3", "javascript", "jQuery"],
-            "summary" : "Some small webpages I wrote when I'm learning HTML5/CSS3/javascript and jQuery.",
+            "summary" : "Some web pages for practicing HTML5/CSS3/javascript and jQuery.",
             "detail_id" : "small_widgets"
         },
         
@@ -28,7 +28,7 @@
             "title" : "(Team) SIP User Agent Remote Controller",
             "date" : "Sep 2013 - Dec 2013",
             "skills" : ["Java", "Java Swing", "Java Applet", "HTML4/CSS2", "OOP"],
-            "summary" : "A Java Applet that can remote control a SIP User Agent over the network to make a call or receive a call.",
+            "summary" : "A Java Applet that can remotely control a SIP User Agent over the network to make a call or receive a call.",
             "detail_id" : "sipua"
         },
         {

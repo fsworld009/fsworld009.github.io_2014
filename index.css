@@ -62,19 +62,19 @@ section {
 /*more space for project panels*/
 .projects .container-fluid {
   padding-left: 0;
-  padding-right: 0;
-}
+  padding-right: 0; }
 
+.projects .small-padding {
+  padding-left: 5px;
+  padding-right: 5px; }
 
 #project-template {
-  display: none;
-}
+  display: none; }
 
 #project-detail {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  margin-top: 25px;
-}
+  margin-top: 25px; }
 
 /*# sourceMappingURL=index.css.map */

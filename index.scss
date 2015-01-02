@@ -9,6 +9,11 @@ section {
   right: $right;
 }
 
+@mixin horizontal-padding ($padding){
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
 /*Vertically central align element, but overlap each other in small screen, so I decide not to use it*/
 @mixin vertical-align(){
   position:absolute;
@@ -35,13 +40,10 @@ section {
   background-attachment: fixed;
 }
 
-$jumbotron-margin-size : 25px;
-$jumbotron-padding-size : 10px;
-
 .jumbotron {
-  margin-top: $jumbotron-margin-size;
-  margin-bottom: $jumbotron-margin-size;
-  padding: $jumbotron-padding-size;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
 }
 
 .my-protrait {
@@ -101,13 +103,11 @@ $jumbotron-padding-size : 10px;
 
 /*more space for project panels*/
 .projects .container-fluid {
-  padding-left: 0 ;
-  padding-right: 0;
+  @include horizontal-padding(0);
 }
 
 .projects .small-padding {
-  padding-left: 5px;
-  pading-right: 5px;
+  @include horizontal-padding(5px);
 }
 
 #project-template {
