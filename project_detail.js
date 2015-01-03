@@ -60,58 +60,60 @@ var project_detail = function(){
     function loadLabelMap(){
         $.getJSON("./json/skill_map.json",function(json){
             skill_map_json = json;
-            showProjectDetail();
+            loadProjectJSON();
         });
     }
 
-    function showProjectDetail(){
-        $.getJSON("./json/"+project_name+".json",function(project){
-            $("title").html(project.title);
+    function loadProjectJSON(){
+        $.getJSON("./json/"+project_name+".json",showProjectDetail);
+    }
 
+    function showProjectDetail(project){
+        
+        $("title").html(project.title);
             
-            var project_panel = $("#project-detail");
-            project_panel.find(".panel-title").html(project.title + " (" + project.date + ")");
-            project_panel.find(".panel-body").children().first().html(project.description);
-            for (var i in project.points){
-                project_panel.find(".keypoints-list").append("<li>"+project.points[i]+"</li>");
-            }
+        var project_panel = $("#project-detail");
+        project_panel.find(".panel-title").html(project.title + " (" + project.date + ")");
+        project_panel.find(".panel-body").children().first().html(project.description);
+        for (var i in project.points){
+            project_panel.find(".keypoints-list").append("<li>"+project.points[i]+"</li>");
+        }
 
-            var project_skills = project_panel.find(".skills");
-            for (i in project.skills){
-                project_skills.append("<span class=\"label label-" + skill_map_json.labels[ skill_map_json.skills [project.skills[i] ]  ] + "\">" + project.skills[i] + "</span> ");
-            }
+        var project_skills = project_panel.find(".skills");
+        for (i in project.skills){
+            project_skills.append("<span class=\"label label-" + skill_map_json.labels[ skill_map_json.skills [project.skills[i] ]  ] + "\">" + project.skills[i] + "</span> ");
+        }
 
 
 
-            //screen shots
+        //screen shots
 
-            var project_screenshots = project_panel.find(".screenshots");
-            for(i in project.screenshots){
-                var screenshot = project.screenshots[i];
-                var src_prefix = "./screenshots/" + project_name + "-" + ("000" + (Number(i)+1) ).slice(-3);
-                var src_thumbnail =  src_prefix + '-thumbnail.' + screenshot.extension;
-                var src = src_prefix + '.' + screenshot.extension;
-                var width = screenshot.width;
-                var height = screenshot.height;
-                var caption = screenshot.caption;
+        var project_screenshots = project_panel.find(".screenshots");
+        for(i in project.screenshots){
+            var screenshot = project.screenshots[i];
+            var src_prefix = "./screenshots/" + project_name + "-" + ("000" + (Number(i)+1) ).slice(-3);
+            var src_thumbnail =  src_prefix + '-thumbnail.' + screenshot.extension;
+            var src = src_prefix + '.' + screenshot.extension;
+            var width = screenshot.width;
+            var height = screenshot.height;
+            var caption = screenshot.caption;
 
-                project_screenshots.append('<a href="' + src + '" class="screenshots-click" ><img class="thumbnail" style="display:inline" title="' + screenshot.caption + '" src="' + src_thumbnail +'"></a> ');
+            project_screenshots.append('<a href="' + src + '" class="screenshots-click" ><img class="thumbnail" style="display:inline" title="' + screenshot.caption + '" src="' + src_thumbnail +'"></a> ');
 
-                photoswipe.push_item(src, width, height, caption);
-            }
+            photoswipe.push_item(src, width, height, caption);
+        }
 
-            //register click event on thumbnails
-            $(".screenshots-click").on("click",function(ev){
-                ev.preventDefault();
-                console.log($(this).index());
-                photoswipe.show($(this).index()-1); //the first element is <br>
-            });
-
-            var project_links = project_panel.find(".links");
-            for (i in project.links){
-                project_links.append('<a href="' + project.links[i].url + '" target="_blank">' + project.links[i].name + '</a> &bull; ');
-            }
+        //register click event on thumbnails
+        $(".screenshots-click").on("click",function(ev){
+            ev.preventDefault();
+            console.log($(this).index());
+            photoswipe.show($(this).index()-1); //the first element is <br>
         });
+
+        var project_links = project_panel.find(".links");
+        for (i in project.links){
+            project_links.append('<a href="' + project.links[i].url + '" target="_blank">' + project.links[i].name + '</a> &bull; ');
+        }
     }
 
     return {loadProjectDetail : begin};
