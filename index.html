@@ -11,7 +11,7 @@
     <title>Andy Lee</title>
   </head>
   <body class="my-body">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <!-- button apperas when screen width is too small (replace regular navbar) -->
       <button data-target="#navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -22,7 +22,7 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <!-- <li><a href="#">Top</a></li> -->
+            <li><a href="#top">Top</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -32,36 +32,41 @@
       </div>
     </nav>
 
+    <a name="top"></a>
+    <div class="dummy-anchor"></div>
     <section class="top">
       <!-- <div class="vertical-align-top"> -->
       <div class="container-fluid">
         <div class="jumbotron">
           <img class="img-thumbnail my-protrait" alt="Andy Lee" src="protrait.png">
-          <h1>Andy Lee</h1>
-          <p>I'm a software developer from Taiwan.</p>
-          <p>
-            I got my Master degree of Computer Science from UT Dallas in May 2014 and currently working in the U.S. 
-          </p>
-          <p>
-            Currently, I'm a <span class="label label-info">Junior Front-End Website Developer</span>. I'm specialized in <span class="label label-warning">HTML5</span>, <span class="label label-warning">CSS3</span>, <span class="label label-warning">javascript</span> and some popular libraries and frameworks such as <span class="label label-success">Twitter Bootstrap</span>, <span class="label label-success">jQuery</span> and <span class="label label-success">AngularJS</span>.
-          </p>
-          <p>
-            Being a programmer, I also like to play around with different programming languages. I've written programs in <span class="label label-warning">C/C++</span>, <span class="label label-warning">JAVA</span>, and <span class="label label-warning">python</span>. Please refer to my projects/works for more detail.
-          </p>
-          <p>
-            Although I'm focusing on front-end website development now, I'm also open to any kind of software development opportunities. Feel free to contact me.
-          </p>
-          <p class="absolute-pos-container">
-            <a role="button" href="#contact" class="align-right btn btn-lg btn-success">Contact Me</a>
-          </p>
-          <p class="dummy"></p>
+          <div class="top-summary">
+            <h1 class="top-text-center">Andy Lee</h1>
+            <h2 class="top-text-center">A software developer from Taiwan, currently working in the U.S.</h2>
+          </div>
+        </div>
+        <div class="bg-wrapper">
+          <article class="h3 text-vertical-span">
+             <p>I'm a <span class="h2">Junior Front-End Website Developer</span>, specialized in <span class="label label-warning">HTML5</span>, <span class="label label-warning">CSS3</span>, <span class="label label-warning">javascript</span> and some popular libraries and frameworks such as <span class="label label-success">Twitter Bootstrap</span>, <span class="label label-success">jQuery</span> and <span class="label label-success">AngularJS</span>.
+            </p><br>
+            <p>
+              As a programmer, I also like to play around with different programming languages. I've written programs in <span class="label label-warning">C/C++</span>, <span class="label label-warning">JAVA</span>, and <span class="label label-warning">python</span>. Please check <a href="#projects">my projects</a> for more detail.
+            </p><br>
+            <p>
+              Although I'm focusing on front-end website development now, I'm also open to any kind of software development opportunities. Please feel free to contact me.
+            </p><br>
+            <p class="absolute-pos-container">
+              <a role="button" href="#contact" class="align-right btn btn-success">Contact Me</a>
+            </p>
+            <p class="dummy"></p>
+          </article>
         </div>
       </div>
       <!-- </div> -->
     </section>
 
+    <a name="profile"></a>
+    <div class="dummy-anchor"></div>
     <section class="profile">
-      <a name="profile"></a>
       <div class="bg-wrapper">
         <h2>Profile</h2>
         <div class="container">
@@ -69,11 +74,11 @@
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <h4>Junior Front-End Consultant</h4>
-              <h5>Technomax LLC, Sep 2014 - Jan 2015</h5>
+              <h5>Technomax LLC, Princeton Junction, New Jersey, Sep 2014 - Jan 2015</h5>
               <ul>
                 <li>Design web pages with HTML5 and CSS3 standard.</li>
                 <li>Use AJAX to communicate with server and exchange JSON data.</li>
-                <li>study and practice popular libraries and frameworks such as Twitter Bootstrap, jQuery and AngularJS</li>
+                <li>Develop and practice popular libraries and frameworks such as Twitter Bootstrap, jQuery and AngularJS</li>
                 <li class="skills">Skills:
                   <span class="label label-warning">HTML5</span>
                   <span class="label label-warning">CSS3</span>
@@ -86,12 +91,12 @@
             </div>
             <div class="col-xs-12 col-sm-6">
               <h4>Website Designer</h4>
-              <h5>Franklin International Education Group, Nov 2011 - May 2012</h5>
+              <h5>Franklin International Education Group, Taipei City, Taiwan, Nov 2011 - May 2012</h5>
               <ul>
                 <li>Developed a database website for the company with PHP Framework CodeIgniter and MySQL database.</li>
                 <li>Identified and analyzed user requirements, and designed website and database structure.</li>
                 <li>Offered different search options to find products on the website.</li>
-                <li>Provided a back-end system for other employees in the company to update the website.</li>
+                <li>Provided a back-end system to update the website.</li>
                 <li class="skills">Skills:
                   <span class="label label-warning">php</span>
                   <span class="label label-success">mySQL</span>
@@ -101,7 +106,7 @@
           </div>
 
 
-          <h3>Education and Honors</h3>
+          <h3>Education</h3>
           <div class="row">
             <div class="col-xs-12 col-sm-6">
               <h4>Master of Science in Computer Science - May 2014</h4>
@@ -115,14 +120,14 @@
               </ul>
             </div>
             <div class="col-xs-12 col-sm-6">
-              <h4>Bachelor of Science in Computer Science & Engineering - June 2010</h4>
+              <h4>Bachelor of Science in Computer Science & Engineering, Sep 2006 - June 2010</h4>
               <h5>National Taiwan Ocean University (NTOU), Keelung, Taiwan</h5>
               <ul>
                 <li>GPA: 3.9</li>
               </ul>
             </div>
           </div>
-          <h3>Programming and Software Skills</h3>
+          <h3>Technical Skills</h3>
           <div class="row">
             <div class="col-xs-12">
               <table class="table table-bordered">
@@ -145,8 +150,9 @@
       </div>
     </section>
 
+    <a name="projects"></a>
+    <div class="dummy-anchor"></div>
     <section class="projects">
-      <a name="projects"></a>
       <div class="bg-wrapper">
         <h2>Projects</h2>
         <div id="project-place-holder" class="container-fluid">
@@ -158,8 +164,9 @@
     
 
 
+    <a name="contact"></a>
+    <div class="dummy-anchor"></div>
     <section class="contact">
-      <a name="contact"></a>
       <div class="bg-wrapper">
         <h2>Contact</h2>
         <div class="container">

@@ -1,6 +1,19 @@
 section {
   min-height: 100vh; }
 
+.top-text-center {
+  text-align: center; }
+
+.top-summary {
+  min-height: 260px;
+  /* protrait height+margin, set min-height to make jumbotron work correctly*/ }
+
+.h3 {
+  color: #000; }
+
+.text-vertical-span {
+  line-height: 35px; }
+
 /*Vertically central align element, but overlap each other in small screen, so I decide not to use it*/
 .my-body {
   margin-left: auto;
@@ -29,13 +42,18 @@ section {
   content: none;
   height: 38px; }
 
-.top .profile, .projects, .contact {
+.dummy-anchor {
+  content: none;
+  height: 35px; }
+
+.top-self-intro, .top, .profile, .projects, .contact {
   margin-top: 20px;
   margin-bottom: 20px; }
 
 .bg-wrapper {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 5px; }
+  padding: 5px;
+  border-radius: 6px; }
 
 .read-more, .back {
   text-align: right;
