@@ -1,7 +1,19 @@
+//http://save-coco.blogspot.com/2010/02/javascriptgetexample.html
+function getQueryString( paramName ){
+    paramName = paramName .replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]").toLowerCase();
+    var reg = "[\\?&]"+paramName +"=([^&#]*)";
+    var regex = new RegExp( reg );
+    var regResults = regex.exec( window.location.href.toLowerCase() );
+    if( regResults === null ) return "";
+    else return regResults [1];
+}
+
+
+
 var photoswipe = function(){
     var pswpElement = document.querySelectorAll('.pswp')[0];
     var items = null;
-    var options = {history:false};
+    var options = {};
     var gallery = null;
 
     function push_item(src, width, height, caption){
@@ -36,7 +48,7 @@ var photoswipe = function(){
 
 var project_detail = function(){
     var skill_map_json;
-    var project_name = window.location.hash.substring(1);
+    var project_name = getQueryString("name");
 
     function begin(){
         if(project_name !== ""){

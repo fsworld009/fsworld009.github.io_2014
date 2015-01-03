@@ -27,7 +27,7 @@ var projects_panel = function(){
                 }
 
                 if(typeof project.detail_id !== "undefined"){
-                    project_panel.find(".read-more").find("a").attr("href","project_detail.html#"+project.detail_id);
+                    project_panel.find(".read-more").find("a").attr("href","project_detail.html?name="+project.detail_id);
                 }else if(typeof project.project_id !== "undefined"){
                     project_panel.find(".read-more").find("a").attr("href","./"+project.project_id+"/").attr("target","_blank");
                 }else if(typeof project.external_link !== "undefined"){
